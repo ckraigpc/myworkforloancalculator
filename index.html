@@ -17,6 +17,14 @@
       font-family: sans-serif;
       font-weight: 800;
     }
+    .sample-error{
+      display: block;
+      background: #f2f2f2;
+
+    }
+    .card-action, .progress{
+      display:none;
+    }
   
   </style>
 </head>
@@ -30,7 +38,7 @@
                   <div class="row">
                     <form id="loan-form">
                       <div class="input-field col s12">
-                        <input type="text" name="loan" id="loan">
+                        <input type="text" name="amount" id="amount">
                         <label for="loan">Loan Amount</label>
                       </div>
                       <div class="input-field col s12">
@@ -45,22 +53,22 @@
                     </form><!--end of form-->
                   </div><!--form wrapper-->
                 </div>
-                <!-- <div class="progress">
+                <div class="progress">
                     <div class="indeterminate"></div>
-                </div> -->
+                </div>
                 <div class="card-action">
                   <h5 id="title">Results</h5>
                   <div class="input-field col s10">
-                      <input type="text" name="mpayment" id="mpayment" disabled>
-                      <label for="mpayment">Monthly Payment</label>
+                      <input type="text" name="monthly-payment" id="monthly-payment" disabled placeholder="Monthly Payment">
+                      <label for="monthly-payment"></label>
                   </div>
                   <div class="input-field col s10">
-                      <input type="text" name="tpayment" id="tpayment" disabled>
-                      <label for="tpyament">Total Payment</label>
+                      <input type="text" name="total-payment" id="total-payment" disabled placeholder="Total Payment">
+                      <label for="total-payment"></label>
                   </div>
                   <div class="input-field col s10">
-                      <input type="text" name="tinterest" id="tinterest" disabled>
-                      <label for="tinterest">Total Interest</label>
+                      <input type="text" name="total-interest" id="total-interest" disabled placeholder="Total Interest">
+                      <label for="total-interest"></label>
                   </div>
                   
                   <a href="" class="reset btn black">Reset Calculations</a>
